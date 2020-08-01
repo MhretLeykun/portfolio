@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Portfolio | Development</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          I'm Mhret Moges!
+        </div>
+        <div class="header-things">
+          <h4>Building Incredible Websites</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            ut dolorem repellendus fugit iure temporibus.
+          </p>
+          <button class="btn">View Our Work</button>
+        </div>
+        <div class="sidebar">
+          <a href=""><img src="./img/facebook.svg" alt="" /></a>
+          <a href=""><img src="./img/twitter.svg" alt="" /></a>
+          <a href=""><img src="./img/linkedin.svg" alt="" /></a>
+          <a href=""><img src="./img/instagram.svg" alt="" /></a>
+        </div>
+      </div>
+    </header>
+    <div class="features">
+      <div class="skill">
+        <img src="./img/pen-tool.svg" alt="" />
+        <div>
+          <h5>Graphic Desgning</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            quia ratione non voluptatem qui officia.
+          </p>
+          <button class="btn solid">
+            View work
+          </button>
+        </div>
+      </div>
+      <div class="skill">
+        <img src="./img/code.svg" alt="" />
+        <div>
+          <h5>Web Designing</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+            consectetur porro consequuntur magnam.
+          </p>
+          <button class="btn solid">
+            View work
+          </button>
+        </div>
+      </div>
+      <div class="skill">
+        <img src="./img/download.svg" alt="" />
+        <div>
+          <h5>Create Template</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+            veritatis harum cupiditate quibusdam pariatur voluptatibus repellat.
+          </p>
+          <button class="btn solid">
+            View work
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const header = document.querySelector('.sidebar');
+      const headerText = document.querySelector('.logo');
+      document.addEventListener('scroll', () => {
+        var scroll_position = window.scrollY;
+        if (scroll_position > 250) {
+          header.style.backgroundColor = '#29323c';
+          headerText.style.color = '#ffffff';
+          headerText.style.backgroundColor = '#29323c';
+          headerText.style.fontSize = '1.5rem';
+          header.style.borderRadius = '30px';
+        } else {
+          headerText.style.backgroundColor = 'transparent';
+          headerText.style.color = '#ffffff';
+          headerText.style.fontSize = '2rem';
+          header.style.backgroundColor = 'transparent';
+        }
+      });
+    </script>
+  </body>
+</html>

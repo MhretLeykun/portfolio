@@ -1,0 +1,19 @@
+.sidebar {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 13rem 1rem;
+  margin-top: 15rem;
+  a {
+    color: white;
+    margin-top: 5rem;
+    text-decoration: none;
+    margin: 1rem;
+  }
+}

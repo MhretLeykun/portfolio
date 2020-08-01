@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,IAAI,AAAC,CACH,UAAU,CAAE,GAAG,CAChB",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/_btn.scss",
+        "../scss/_base.scss",
+        "../scss/_form.scss",
+        "../scss/_header.scss",
+        "../scss/_footer.scss",
+        "../scss/_sidebar.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}

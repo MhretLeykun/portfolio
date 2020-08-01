@@ -1,0 +1,24 @@
+.features {
+  display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 2rem;
+  text-align: center;
+  .skill {
+    border-radius: 30px;
+    padding: 2rem;
+    background: #efefef;
+    img {
+      width: 4rem;
+    }
+    h5 {
+      margin-top: 1.9rem;
+      font-size: 2.5rem;
+      font-weight: lighter;
+    }
+  }
+}
