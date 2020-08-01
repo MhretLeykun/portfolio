@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.min.css" />
     <title>Portfolio | Development</title>
   </head>
@@ -21,14 +32,9 @@
           </p>
           <button class="btn">View Our Work</button>
         </div>
-        <div class="sidebar">
-          <a href=""><img src="./img/facebook.svg" alt="" /></a>
-          <a href=""><img src="./img/twitter.svg" alt="" /></a>
-          <a href=""><img src="./img/linkedin.svg" alt="" /></a>
-          <a href=""><img src="./img/instagram.svg" alt="" /></a>
-        </div>
       </div>
     </header>
+
     <div class="features">
       <div class="skill">
         <img src="./img/pen-tool.svg" alt="" />
@@ -70,24 +76,64 @@
         </div>
       </div>
     </div>
+    <div class="form">
+      <form action="">
+        <div>
+          <h2>Get In Touch With Us</h2>
+        </div>
+        <div class="controls">
+          <label for="">First Name</label>
+          <input type="text" placeholder="First Name" autocomplete="off" />
+        </div>
+        <div class="controls">
+          <label for="">Email</label>
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Email"
+            autocomplete="off"
+          />
+        </div>
+        <div class="controls">
+          <label for="">Comment</label>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your message to me"
+            autocomplete="off"
+          ></textarea>
+        </div>
+        <div>
+          <button class="btn solid">Send</button>
+        </div>
+      </form>
+    </div>
+    <div class="sidebar">
+      <a href=""><img src="./img/facebook.svg" alt="" /></a>
+      <a href=""><img src="./img/twitter.svg" alt="" /></a>
+      <a href=""><img src="./img/linkedin.svg" alt="" /></a>
+      <a href=""><img src="./img/instagram.svg" alt="" /></a>
+    </div>
+    <footer>
+      
+    </footer>
     <script>
-      const header = document.querySelector('.sidebar');
+      const sidebar = document.querySelector('.sidebar');
       const headerText = document.querySelector('.logo');
       document.addEventListener('scroll', () => {
         var scroll_position = window.scrollY;
         if (scroll_position > 250) {
-          header.style.backgroundColor = '#29323c';
-          headerText.style.color = '#ffffff';
-          headerText.style.backgroundColor = '#29323c';
-          headerText.style.fontSize = '1.5rem';
-          header.style.borderRadius = '30px';
+          sidebar.style.backgroundColor = '#000000';
+          sidebar.style.borderRadius = '30px';
         } else {
-          headerText.style.backgroundColor = 'transparent';
-          headerText.style.color = '#ffffff';
-          headerText.style.fontSize = '2rem';
+          sidebar.style.backgroundColor = 'transparent';
           header.style.backgroundColor = 'transparent';
         }
       });
+      console.log(window.innerWidth);
     </script>
   </body>
 </html>
